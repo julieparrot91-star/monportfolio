@@ -2,7 +2,7 @@
 title: "Example Blog Post"
 description: "A sample blog post to demonstrate the blog functionality"
 pubDate: "Jan 01 2025"
-heroImage: "/blog-placeholder-1.jpg"
+heroImage: "../../assets/blog-placeholder-1.jpg"
 ---
 
 This is an example blog post. Replace this content with your own writing.

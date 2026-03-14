@@ -20,7 +20,7 @@ const hasEntries = entries && entries.length > 0;
 
 {hasEntries && (
 	<section class="changelog">
-		<h2>Commit History</h2>
+		<h2>Historique des commits</h2>
 		<div class="changelog-list">
 			{entries.map((entry, index) => (
 				<div class={`changelog-entry ${index === 0 ? 'latest' : ''}`}>

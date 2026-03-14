@@ -24,16 +24,16 @@ const { name, issuer, credlyUrl, dateIssued, expirationDate, inProgress = false,
 			<p class="cert-issuer">{issuer}</p>
 			<div class="cert-dates">
 				<div class="date-item">
-					<span class="date-label">Issued:</span>
+					<span class="date-label">Obtenue le :</span>
 					<span class="date-value">{dateIssued}</span>
 				</div>
 				{inProgress ? (
 					<div class="date-item in-progress">
-						<span class="status-badge">In Progress</span>
+						<span class="status-badge">En cours</span>
 					</div>
 				) : expirationDate ? (
 					<div class="date-item">
-						<span class="date-label">Expires:</span>
+						<span class="date-label">Expire le :</span>
 						<span class="date-value">{expirationDate}</span>
 					</div>
 				) : null}

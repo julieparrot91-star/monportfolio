@@ -36,30 +36,30 @@ const {
 // Build breadcrumb items
 const isPreviousVersion = versionStatus === 'previous';
 const breadcrumbItems = [
-	{ label: 'Home', href: '/' },
-	{ label: 'Projects', href: '/projects/' },
+	{ label: 'Accueil', href: '/' },
+	{ label: 'Projets', href: '/projects/' },
 ];
 
 if (isPreviousVersion && currentVersion) {
 	// For previous versions: Projects > Project Name > vX.X
 	breadcrumbItems.push({ label: title, href: `/projects/${currentVersion}/` });
-	breadcrumbItems.push({ label: version || 'Previous' });
+	breadcrumbItems.push({ label: version || 'Précédent' });
 } else {
 	// For current versions: Projects > Project Name
 	breadcrumbItems.push({ label: title });
 }
 
 const categoryLabels = {
-	'aws-security': 'AWS Security',
-	'aws-infra': 'AWS Infrastructure',
+	'aws-security': 'Sécurité AWS',
+	'aws-infra': 'Infrastructure AWS',
 	'homelab': 'Homelab',
-	'ai-tools': 'AI & Automation',
-	'local-dev': 'Local Development',
-	'aws-ai': 'AWS AI/ML',
-	'frontend-development': 'Frontend Development'
+	'ai-tools': 'IA & Automatisation',
+	'local-dev': 'Développement Local',
+	'aws-ai': 'IA/ML AWS',
+	'frontend-development': 'Développement Frontend'
 };
 ---
-<html lang="en">
+<html lang="fr">
 	<head>
 		<BaseHead title={title} description={description} />
 		<style>

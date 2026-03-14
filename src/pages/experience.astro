@@ -1,0 +1,129 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="fr">
+	<head>
+		<BaseHead title={`Expériences professionnelles | ${SITE_TITLE}`} description="Expériences professionnelles de Julien Parrot" />
+		<style>
+			main {
+				width: min(900px, 95%);
+				margin: 0 auto;
+				padding: var(--space-lg) 0;
+			}
+
+			.experience-list {
+				display: flex;
+				flex-direction: column;
+				gap: 2rem;
+			}
+
+			.experience-item {
+				padding: 1.5rem;
+				border-left: 4px solid var(--accent);
+				background: rgba(0, 0, 0, 0.05);
+				border-radius: 0 8px 8px 0;
+			}
+
+			:global(.dark) .experience-item {
+				background: rgba(255, 255, 255, 0.05);
+			}
+
+			.experience-header {
+				margin-bottom: 1rem;
+			}
+
+			.experience-title {
+				margin: 0 0 0.5rem 0;
+				font-size: 1.3rem;
+				color: rgb(var(--black));
+			}
+
+			.experience-period {
+				margin: 0;
+				color: var(--accent);
+				font-weight: 600;
+				font-size: 0.9rem;
+			}
+
+			.experience-tasks {
+				margin: 0;
+				padding-left: 1.2rem;
+			}
+
+			.experience-tasks li {
+				margin-bottom: 0.5rem;
+				color: rgb(var(--gray-dark));
+				line-height: 1.5;
+			}
+
+			.experience-tasks li:last-child {
+				margin-bottom: 0;
+			}
+
+			@media (max-width: 767px) {
+				.experience-item {
+					padding: 1rem;
+				}
+
+				.experience-title {
+					font-size: 1.1rem;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section>
+				<h1>Expériences professionnelles</h1>
+				<div class="experience-list">
+					<div class="experience-item">
+						<div class="experience-header">
+							<h2 class="experience-title">Freelance développeur web</h2>
+							<p class="experience-period">2023 – 2025</p>
+						</div>
+						<ul class="experience-tasks">
+							<li>Création d'outil web pour professionnel</li>
+							<li>Réparation et montage matérielle informatique</li>
+							<li>Déploiement d'un projet web sur Heroku</li>
+							<li>Résolution de problème technique Windows</li>
+							<li>Formation sur les cybersécurité</li>
+						</ul>
+					</div>
+
+					<div class="experience-item">
+						<div class="experience-header">
+							<h2 class="experience-title">Développeur web et mobile chez Frianbiz</h2>
+							<p class="experience-period">2021 – 2023</p>
+						</div>
+						<ul class="experience-tasks">
+							<li>Création d'outil web et mobile pour professionnel</li>
+							<li>Contribution à l'élaboration et l'intégration API et de base de données</li>
+							<li>Assurer l'interface entre le client, le design et le développement</li>
+							<li>Mise en place d'une architecture logicielle</li>
+							<li>Aide à la maintenance informatique</li>
+						</ul>
+					</div>
+
+					<div class="experience-item">
+						<div class="experience-header">
+							<h2 class="experience-title">Stage Développeur web chez B.O L'ATELIER</h2>
+							<p class="experience-period">2019 / 3 mois</p>
+						</div>
+						<ul class="experience-tasks">
+							<li>Modification de leur site web pour l'agence</li>
+							<li>Création d'une base de données</li>
+							<li>Gestion d'un projet avec mise en place d'un cahier des charges</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

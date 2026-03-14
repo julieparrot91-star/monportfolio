@@ -1,0 +1,96 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="fr">
+	<head>
+		<BaseHead title={`CV | ${SITE_TITLE}`} description="CV de Julien Parrot - Administrateur Cloud Azure" />
+		<style>
+			main {
+				width: min(900px, 95%);
+				margin: 0 auto;
+				padding: var(--space-lg) 0;
+			}
+
+			.cv-wrapper {
+				background: var(--bg-secondary);
+				border-radius: 20px;
+				padding: 2rem;
+				box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+				margin-top: 1.5rem;
+			}
+
+			.cv-header {
+				text-align: center;
+				margin-bottom: 2rem;
+			}
+
+			.cv-header h1 {
+				font-size: 2.5rem;
+				margin-bottom: 0.5rem;
+				color: var(--accent);
+			}
+
+			.cv-header p {
+				color: rgb(var(--gray));
+				font-size: 1.1rem;
+			}
+
+			.cv-image-container {
+				text-align: center;
+				margin: 2rem 0;
+			}
+
+			.cv-image {
+				max-width: 70%;
+				height: auto;
+				border-radius: 12px;
+				box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+			}
+
+			.download-btn {
+				display: inline-block;
+				padding: 0.6rem 1.5rem;
+				background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+				color: white;
+				text-decoration: none;
+				border-radius: 8px;
+				font-weight: 600;
+				font-size: 0.95rem;
+				transition: all 0.3s ease;
+				box-shadow: 0 4px 15px rgba(var(--accent), 0.4);
+			}
+
+			.btn-container {
+				text-align: center;
+				margin-top: 2rem;
+				padding-top: 1rem;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section>
+				<div class="cv-wrapper">
+					<div class="cv-header">
+						<h1>Mon CV</h1>
+					</div>
+					<div class="cv-image-container">
+						<img src="/CV.jpg" alt="CV de Julien Parrot" class="cv-image" />
+					</div>
+					<div class="btn-container">
+						<a href="/CV.pdf" class="download-btn" download="CV_Julien_Parrot.pdf">
+							Télécharger le CV
+						</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

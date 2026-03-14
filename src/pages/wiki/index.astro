@@ -22,9 +22,9 @@ const pagesByCategory = wikiPages.reduce((acc, page) => {
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 	<head>
-		<BaseHead title={`Wiki | ${SITE_TITLE}`} description="Technical documentation and knowledge base" />
+		<BaseHead title={`Wiki | ${SITE_TITLE}`} description="Documentation technique et base de connaissances" />
 		<style>
 			main {
 				width: var(--container-medium);
@@ -102,10 +102,10 @@ const pagesByCategory = wikiPages.reduce((acc, page) => {
 			<section>
 				<div class="intro">
 					<h1>Wiki</h1>
-					<p>Technical documentation, guides, and knowledge base.</p>
+					<p>Documentation technique, guides et base de connaissances.</p>
 				</div>
 				{wikiPages.length === 0 ? (
-					<p>No wiki pages yet. Documentation coming soon!</p>
+					<p>Pas encore de pages wiki. Documentation à venir!</p>
 				) : (
 					<>
 						{Object.entries(pagesByCategory).map(([category, pages]) => (
@@ -118,7 +118,7 @@ const pagesByCategory = wikiPages.reduce((acc, page) => {
 												<h3 class="title">{page.data.title}</h3>
 												<p>{page.data.description}</p>
 												<div class="meta">
-													Updated: <FormattedDate date={page.data.updatedDate} />
+													Mis à jour: <FormattedDate date={page.data.updatedDate} />
 												</div>
 												{page.data.tags && page.data.tags.length > 0 && (
 													<div class="tags">

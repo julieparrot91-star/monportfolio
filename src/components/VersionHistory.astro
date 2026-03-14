@@ -33,12 +33,12 @@ const shouldRender = hasPreviousVersions || isPreviousVersion;
 				</span>
 				{isPreviousVersion ? (
 					<>
-						<span>Viewing Previous Version</span>
+						<span>Voir la version précédente</span>
 						{currentVersion && <span class="previous-badge">{currentVersion}</span>}
 					</>
 				) : (
 					<>
-						<span>Version History</span>
+						<span>Historique des versions</span>
 						{currentVersion && <span class="current-badge">{currentVersion}</span>}
 					</>
 				)}
@@ -56,11 +56,11 @@ const shouldRender = hasPreviousVersions || isPreviousVersion;
 						<line x1="5" y1="12" x2="19" y2="12"></line>
 						<polyline points="12 5 19 12 12 19"></polyline>
 					</svg>
-					View Current Version
+					Voir la version actuelle
 				</a>
 			) : (
 				<>
-					<p class="version-list-label">Previous Versions:</p>
+					<p class="version-list-label">Versions précédentes :</p>
 					<ul>
 						{majorVersions?.map((entry) => (
 							<li>

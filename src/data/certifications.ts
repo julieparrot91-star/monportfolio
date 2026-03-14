@@ -1,3 +1,5 @@
+import az104Badge from "../assets/AZ104.png";
+
 export interface Certification {
 	name: string;
 	issuer: string;
@@ -10,19 +12,11 @@ export interface Certification {
 
 export const certifications: Certification[] = [
 	{
-		name: "Example Certification",
-		issuer: "Certification Provider",
-		credlyUrl: "https://www.credly.com/badges/example",
-		dateIssued: "Jan 2025",
-		expirationDate: "Jan 2028",
-		badgeImageUrl: "https://images.credly.com/images/placeholder.png",
-	},
-	{
-		name: "In Progress Certification",
-		issuer: "Another Provider",
-		credlyUrl: "https://www.credly.com/badges/example2",
-		dateIssued: "Expected 2025",
-		inProgress: true,
-		badgeImageUrl: "https://images.credly.com/images/placeholder2.png",
+		name: "Microsoft Certified: Azure Administrator Associate",
+		issuer: "Microsoft",
+		credlyUrl: "https://www.credly.com/badges/your-credly-link",
+		dateIssued: "9 mars 2026",
+		expirationDate: "10 mars 2027",
+		badgeImageUrl: az104Badge.src,
 	},
 ];

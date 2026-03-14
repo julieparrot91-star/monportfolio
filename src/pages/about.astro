@@ -5,22 +5,34 @@ import { certifications } from '../data/certifications';
 ---
 
 <Layout
-	title="About Me"
-	description="About Your Name">
-	<center><p>I am Your Name — your tagline here.</center>
+	title="À propos"
+	description="À propos de Julien Parrot">
+	<p>Doté d'une forte capacité d'adaptation et d'un sens aigu du service, je suis passionné par les nouvelles technologies et l'infrastructure cloud.
 	</p>
-	<p>Your professional background and what you do goes here. Describe your role, expertise, and what drives you.
-	</p>
-	Expand on your experience, philosophy, and what visitors can expect from your portfolio. Link to your credentials and social profiles as needed.
+	Mon objectif est de mettre à profit mes compétences en administration Azure et en gestion d'infrastructure au sein d'une entreprise dynamique.
 	</p>
 <p>
 <center>
-<h1> Education</h1>
-	<p><h5> Your Degree, Expected Graduation Date, University Name
+<h1>Formation</h1>
+	<div class="education-list">
+		<div class="education-item">
+			<h3>Master Développement Logiciel et IOT</h3>
+			<p class="school">H3 Hitema - Issy-les-Moulineaux</p>
+			<p class="year">2021 - 2023</p>
+		</div>
+		<div class="education-item">
+			<h3>SUP3 Développement web</h3>
+			<p class="school">École Iris - Paris 17</p>
+			<p class="year">2020 - 2021</p>
+		</div>
+		<div class="education-item">
+			<h3>BTS SIO Spécialité SLAM</h3>
+			<p class="school">Lycée Parc des Loges - Evry</p>
+			<p class="year">2017 - 2019</p>
+		</div>
+	</div>
 	<p>
-			Previous Degree, Year, University Name
-			<p>
-	Any honors or memberships <a href="https://example.com" target="blank">--></a>
+	Certification Microsoft Azure Administrator (AZ-104) <a href="https://www.credly.com" target="blank">--></a>
 
 	<div class="certification-badges">
 		{certifications.map((cert) => (
@@ -62,6 +74,37 @@ import { certifications } from '../data/certifications';
 			.certification-badges {
 				grid-template-columns: 1fr;
 			}
+		}
+
+		.education-list {
+			display: flex;
+			flex-direction: column;
+			gap: 1.5rem;
+			margin: 1rem 0;
+		}
+
+		.education-item {
+			text-align: left;
+			padding: 1rem;
+			border-left: 3px solid var(--accent, #00a8ff);
+			background: rgba(0, 0, 0, 0.05);
+			border-radius: 0 8px 8px 0;
+		}
+
+		.education-item h3 {
+			margin: 0 0 0.5rem 0;
+			font-size: 1.1rem;
+		}
+
+		.education-item .school {
+			margin: 0;
+			color: #666;
+		}
+
+		.education-item .year {
+			margin: 0.25rem 0 0 0;
+			font-size: 0.9rem;
+			color: #888;
 		}
 	</style>
 

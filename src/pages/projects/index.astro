@@ -18,20 +18,25 @@ const projects = (await getCollection('projects'))
 const getSlug = (id: string) => id.endsWith('/index') ? id.replace(/\/index$/, '') : id;
 
 const categoryLabels = {
-	'aws-security': 'AWS Security',
-	'aws-infra': 'AWS Infrastructure',
+	'aws-security': 'Sécurité AWS',
+	'aws-infra': 'Infrastructure AWS',
 	'homelab': 'Homelab',
-	'ai-tools': 'AI & Automation',
-	'local-dev': 'Local Development',
-	'aws-ai': 'AWS AI/ML',
-	'frontend-development': 'Frontend Development'
+	'ai-tools': 'IA & Automatisation',
+	'local-dev': 'Développement Local',
+	'aws-ai': 'IA/ML AWS',
+	'frontend-development': 'Développement Frontend'
+};
+
+const statusLabels: Record<string, string> = {
+	'launched': 'Lancé',
+	'in-development': 'En développement'
 };
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 	<head>
-		<BaseHead title={`Projects | ${SITE_TITLE}`} description="Cloud security and DevSecOps projects" />
+		<BaseHead title={`Projets | ${SITE_TITLE}`} description="Projets Cloud security et DevSecOps" />
 		<style>
 			main {
 				width: min(1200px, 95%);
@@ -183,14 +188,12 @@ const categoryLabels = {
 		<main>
 			<section>
 				<div class="intro">
-					<h1>Projects</h1>
-					<p>Most of my projects live at the intersection of cloud security, infrastructure automation, and DevSecOps; AWS org baselines, hardened architectures, and pipelines that make secure delivery the default. Mixed in, you’ll see the occasional website, homelab experiments, and AI-driven tooling where I use LLMs to reduce toil and sharpen workflows.
-					</p>
-					<p>
-					Some of these projects are polished reference architectures. Others are live experiments. All of them are part of the same goal: quietly raising the bar on how I design, secure, and ship systems. </p>
+					<h1>Projets</h1>
+					<p>Voici quelques projets sur lesquels j’ai travaillé. certifié Microsoft Azure Administrator (AZ-104), je mets en pratique mes compétences en administration cloud Azure à travers divers projets techniques.</p>
+					<p>Vous trouverez également des projets de développement web, d’infrastructure et de dépannage informatique reflète mon parcours professionnel.</p>
 				</div>
 				{projects.length === 0 ? (
-					<p>No projects yet. Check back soon!</p>
+					<p>Pas encore de projets. Revenez bientôt !</p>
 				) : (
 					<ul>
 						{projects.map((project) => (
@@ -204,7 +207,7 @@ const categoryLabels = {
 										<div class="meta">
 											<span class="category">{categoryLabels[project.data.category]}</span>
 											<span class={`status ${project.data.status}`}>
-												{project.data.status.replace('-', ' ')}
+												{statusLabels[project.data.status] || project.data.status}
 											</span>
 											{project.data.version && <span> · {project.data.version}</span>}
 										</div>
