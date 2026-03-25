@@ -9,7 +9,6 @@ startedDate: 2025-03-20
 launchedDate: 2025-03-25
 techStack: ["Azure", "AKS", "Terraform", "Docker", "GitHub Actions", "FastAPI", "PostgreSQL", "ACR"]
 repoUrl: "https://github.com/julieparrot91-star/kubernetes-azure"
-liveUrl: "https://julien-parrot.fr"
 ---
 
 ## Présentation
