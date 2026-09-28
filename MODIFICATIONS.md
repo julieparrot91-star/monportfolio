@@ -135,6 +135,13 @@ heroImage: "../../assets/blog-placeholder-1.jpg"
 
 ---
 
+## 11. Mise à jour du CV (28/09/2026)
+**Fichier:** `public/CV.jpg`, `public/CV.pdf`, `src/assets/CV.pdf`
+**Modification:** Remplacement du CV par la version de septembre 2026 (Julien_Parrot_CV.pdf) — image d'aperçu régénérée depuis le nouveau PDF (1325×1872).
+**Raison:** CV mis à jour.
+
+---
+
 ## Vérification
 
 Le site fonctionne correctement. Tu peux le tester avec:
@@ -151,4 +158,4 @@ Pages fonctionnelles:
 
 ---
 
-Date des modifications: 13 mars 2026
+Date des modifications: 28 septembre 2026
