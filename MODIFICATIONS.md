@@ -142,6 +142,13 @@ heroImage: "../../assets/blog-placeholder-1.jpg"
 
 ---
 
+## 12. Page d'accueil alignée sur le CV (28/09/2026)
+**Fichier:** `src/pages/index.astro`, `src/consts.ts`
+**Modification:** Titre adapté ("Administrateur systèmes, réseaux et cloud"), résumé issu du CV, ligne skills (Azure · Terraform · Kubernetes · CI/CD · Développement web), mention des 3 certifications (AZ-104, Terraform Associate, CKA). Description meta du site mise à jour.
+**Raison:** Alignement de la page d'accueil sur le CV de septembre 2026.
+
+---
+
 ## Vérification
 
 Le site fonctionne correctement. Tu peux le tester avec:
