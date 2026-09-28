@@ -149,6 +149,13 @@ heroImage: "../../assets/blog-placeholder-1.jpg"
 
 ---
 
+## 13. Page expérience alignée sur le CV (28/09/2026)
+**Fichier:** `src/pages/experience.astro`
+**Modification:** Freelance — période "2023 – aujourd'hui" (au lieu de 2023–2025) et tâches cloud du CV (Terraform/Azure, Kubernetes, Azure Monitor + Grafana, pipelines GitLab CI/Jenkins, outils web, cybersécurité). Frianbiz — tâches alignées sur le CV (API/bases de données, coordination client, bases de données cloud, pipelines). Stage B.O L'ATELIER retiré (absent du CV de septembre 2026).
+**Raison:** Alignement de la page expérience sur le CV de septembre 2026.
+
+---
+
 ## Vérification
 
 Le site fonctionne correctement. Tu peux le tester avec:
