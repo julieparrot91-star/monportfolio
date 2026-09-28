@@ -27,4 +27,11 @@ export const certifications: Certification[] = [
 		expirationDate: "10 mars 2027",
 		badgeImageUrl: az104Badge.src,
 	},
+	{
+		name: "Certified Kubernetes Administrator",
+		issuer: "CNCF / The Linux Foundation",
+		credlyUrl: "#",
+		dateIssued: "Septembre 2026",
+		badgeImageUrl: "/CKA.svg",
+	},
 ];

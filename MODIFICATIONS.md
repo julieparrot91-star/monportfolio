@@ -156,6 +156,13 @@ heroImage: "../../assets/blog-placeholder-1.jpg"
 
 ---
 
+## 14. Certification CKA ajoutée à la page À propos (28/09/2026)
+**Fichier:** `src/data/certifications.ts`, `public/CKA.svg`
+**Modification:** Ajout de la certification Certified Kubernetes Administrator (CNCF / The Linux Foundation, septembre 2026) avec le badge officiel CNCF (kubernetes-cka-color.svg, servi en public/CKA.svg).
+**Raison:** Troisième certification obtenue — affichage aligné sur les 2 existantes.
+
+---
+
 ## Vérification
 
 Le site fonctionne correctement. Tu peux le tester avec:
