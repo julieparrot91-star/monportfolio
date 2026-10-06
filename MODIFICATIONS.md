@@ -170,6 +170,13 @@ heroImage: "../../assets/blog-placeholder-1.jpg"
 
 ---
 
+## 16. Page d'accueil — alignement sur le nouveau CV (06/10/2026)
+**Fichier:** `src/pages/index.astro`
+**Modification:** "fiabilisation" → "sécurisation" d'infrastructures cloud — le nouveau CV (06/10) reformule le résumé autour de la sécurisation.
+**Raison:** Cohérence accueil ↔ CV.
+
+---
+
 ## Vérification
 
 Le site fonctionne correctement. Tu peux le tester avec:
