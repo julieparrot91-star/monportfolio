@@ -163,6 +163,13 @@ heroImage: "../../assets/blog-placeholder-1.jpg"
 
 ---
 
+## 15. Nouvelle version du CV (06/10/2026)
+**Fichier:** `public/CV.jpg`, `public/CV.pdf`, `src/assets/CV.pdf`
+**Modification:** Remplacement par la version du 6 octobre 2026 (Julien_Parrot_CV.pdf, 511 Ko) ; aperçu JPG régénéré (dpi 160).
+**Raison:** Mise à jour du CV par Le J.
+
+---
+
 ## Vérification
 
 Le site fonctionne correctement. Tu peux le tester avec:
